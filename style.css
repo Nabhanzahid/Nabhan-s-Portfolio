@@ -667,6 +667,14 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
+  html {
+    cursor: auto;
+  }
+
+  .cursor-dot, .cursor-outline {
+    display: none !important;
+  }
+
   body {
     overflow-x: hidden;
   }
