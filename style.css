@@ -766,4 +766,35 @@ footer {
   section {
     padding: 4rem 5%;
   }
+
+  /* Contact Grid 1-2-1-2 layout */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  
+  .contact-grid a {
+    justify-content: center;
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .contact-grid a:nth-child(1),
+  .contact-grid a:nth-child(4),
+  .contact-grid a:nth-child(7) {
+    grid-column: span 2;
+  }
+
+  /* Fix Project Card Icon Overlap */
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-link-icon {
+    bottom: 1rem;
+    right: 1rem;
+    width: 35px;
+    height: 35px;
+  }
 }
